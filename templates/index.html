@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yousra's Resume</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/core.js"></script>
+		<script type="text/javascript" src="js/requestAnimationFrame.js"></script>
+		<script type="text/javascript" src="js/InputEngine.js"></script>
+		<script type="text/javascript" src="js/Player.js"></script>
+		<script type="text/javascript" src="js/Character.js"></script>
+		<script type="text/javascript" src="js/Sound.js"></script>
+		<script type="text/javascript" src="js/GameEngine.js"></script>
+	</head>
+	<body onload="gGameEngine.load()">
+		<div class="container top">
+		    
+		    <center><h1>Yousra's Interactive Resume</h1></center>
+		    <hr width="800">
+            <div class="box">
+		        <canvas id="mainCanvas" width="800" height="400"></canvas>
+		    </div>
+		    <div class="box2">
+		        <h2>How to Play:</h2>
+		        <p>Use the arrows to move around and talk to Yousra's colleagues. You can find them with the help of the map on the top right corner of the canvas.</p>
+		        <p>Press 'space' to engage in a conversation when positioned right next to the person. When a sentence ends, press 'space' again to continue until the end of the conversation. To disengage a conversation, simply move away.</p>
+		        <p>Press 'backspace' to mute the music.</p>
+		        <p>Press 'F1' to refresh the page and start over.</p>
+		        <p><a href = "https://drive.google.com/file/d/1echBYsdLFYdLnHmtXALIuABNAYxMlDsI/view?usp=sharing" target="_blank">Yousra's official resume</a></p>
+		    </div>  
+		</div>    
+	    <script>
+	        //GA code
+            function gaSSDSLoad (acct) {
+              var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."),
+                  pageTracker,
+                  s;
+              s = document.createElement('script');
+              s.src = gaJsHost + 'google-analytics.com/ga.js';
+              s.type = 'text/javascript';
+              s.onloadDone = false;
+              function init () {
+                pageTracker = _gat._getTracker(acct);
+                pageTracker._trackPageview();
+              }
+              s.onload = function () {
+                s.onloadDone = true;
+                init();
+              };
+              s.onreadystatechange = function() {
+                if (('loaded' === s.readyState || 'complete' === s.readyState) && !s.onloadDone) {
+                  s.onloadDone = true;
+                  init();
+                }
+              };
+            }
+
+            /* and run it */
+            gaSSDSLoad("UA-45508663-1");
+        </script> 
+	
+	</body>
+</html>
